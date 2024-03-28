@@ -1,0 +1,10 @@
+#navigation {
+    background: #1C1C1C;
+    opacity: 1;
+    display: flex;
+}
+li {
+    display: inline;
+    color: #FFFFFF;
+    opacity: 0.69;
+}
