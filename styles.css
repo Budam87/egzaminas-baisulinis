@@ -1,10 +1,52 @@
 #navigation {
+    width: 100%;
+    height: 72px;
+    margin: auto;
     background: #1C1C1C;
     opacity: 1;
     display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
 }
-li {
-    display: inline;
+
+.nav-logo {
+    padding-left: 148px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+}
+
+#nav-menu {
+    height: 100%;
+    display: flex;
+    padding-right: 148px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 44px;
+}
+
+#nav-menu a {
+    text-decoration: none;
+}
+
+.nav-link {
+    display: flex;
     color: #FFFFFF;
     opacity: 0.69;
+    height: 100%;
+    align-items: center;
+    
 }
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+a:hover {
+    border-bottom: solid 3px #E27866;
+}
+
+
