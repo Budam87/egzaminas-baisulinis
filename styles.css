@@ -150,6 +150,7 @@ a:hover {
 }
 
 .city-form {
+    display: flex;
     margin-right: 148px;
     margin-top: 65px;
     margin-left: 91px;
@@ -168,10 +169,17 @@ a:hover {
     font-size: 20px;
     text-align: center;
     padding: 17px 0px;
+    margin-bottom: 20px;
 }
 
 span {
     color: #E27866;
+}
+
+.sub-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .sub-button {
@@ -186,6 +194,14 @@ span {
 
 .input-box {
     padding-left: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.input-box h4 {
+    font-size: 16px;
+    color: #1C1C1C;
+    padding-bottom: 18px;
 }
 
 input[type=text] {
@@ -205,6 +221,8 @@ input[type=number] {
     width: 80%;
     border-color: #D8D8D8;
     font-size: 12px;
+    margin-bottom: 20px;
+    
 }
 
 input[type=radio] {
@@ -386,6 +404,13 @@ label {
     text-align: center;
 }
 
+.awesome-div h2 {
+    color: black;
+    margin: auto;
+    padding-top: 8%;
+    padding-bottom: 21px;
+}
+
 .awesome-div img {
     width: 5%;
     margin-bottom: 27px;
@@ -405,10 +430,21 @@ label {
     flex-basis: 25%;
 }
 
+.other-icons h4 {
+    text-align: center;
+}
+
 .pricing-div {
     text-align: center;
     background-color: #6696E2;
     width: 100%;
+}
+
+.pricing-div h2 {
+    text-align: center;
+    margin: auto;
+    padding-top: 8%;
+    padding-bottom: 21px;
 }
 
 .pricing-div img {
@@ -431,6 +467,10 @@ label {
     align-items: flex-end;
 }
 
+.pricing-plans h4 {
+    text-align: center;
+}
+
 .plan-box {
     width: 30%;
 }
@@ -449,7 +489,8 @@ label {
     padding-bottom: 10px;
 }
 
-.black h3 {
+.black h4 {
+    padding-top: 14px;
     color: white;
 }
 
@@ -482,6 +523,148 @@ li {
 .green-content p {
     padding: 10px;
     margin: 0;
+}
+
+.reviews-div {
+    width: 100%;
+    text-align: center;
+}
+
+.reviews-div h2 {
+    text-align: center;
+    margin: auto;
+    padding-top: 8%;
+    padding-bottom: 21px;
+    color: black; 
+    
+}
+
+.bubble {
+    background: #6696E2;
+    position: relative;
+    cursor:pointer;
+    border-radius:10px;
+  }
+
+  .responses {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    align-items:flex-end;
+    justify-content: center;
+    gap: 119px;
+    padding-top: 4%;
+    padding-bottom: 5%;
+  }
+
+  .customer-div {
+    width: 25%;
+  }
+
+  .bubble p {
+    padding: 20px;
+  }
+
+  .bubble:before {
+    content: "";
+    position: absolute;
+    top: calc(100% - 10px); 
+    left: 20px;
+    height: 20px;
+    width: 20px;
+    background: #6696E2;
+    transform: rotate(45deg);
+  }
+
+  .customer-info {
+    display: flex;
+    gap: 16px;
+  }
+
+  .customer-info img {
+    width: 70px;
+    height: 70px;
+    margin-top: 19px;
+  }
+
+  .customer-name p, h4 {
+    margin: 0px;
+    text-align: justify;
+  }
+
+  .customer-name h4 {
+    margin-top: 25px;
+  }
+
+  .contact {
+    width: 100%;
+    background-color: #E27866;
+    text-align: center;
+    padding-bottom: 8%;
+  }
+
+  .contact h2 {
+    text-align: center;
+    margin: auto;
+    padding-top: 8%;
+    padding-bottom: 21px;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+
+  .contact-form {
+    display: flex;
+    max-width: 390px;
+    margin: auto;
+    background-color: white;
+    justify-content: center;
+  }
+
+  .contact-form form {
+    width: 100%;
+    margin: auto;
+  }
+
+  .contact-info {
+    margin: 43px;
+    text-align: justify;
+  }
+
+  .send-button {
+    max-width: 158px;
+    color: white;
+    background-color: #41D395;
+    margin: auto;
+    margin-bottom: 6%; 
+    font-size: 15px;
+
+}  
+
+.send-button p {
+    padding: 15px 56px;
+}
+
+.footer {
+    background-color: #1C1C1C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 124px;
+}
+
+.footer-logos {
+    margin-left: 8%;
+}
+
+.footer p {
+    margin-right: 8%;
+}
+
+.footer-logos img {
+    width: 20px;
+    height: 20px;
 }
 
 
