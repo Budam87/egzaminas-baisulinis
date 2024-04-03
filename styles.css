@@ -1,3 +1,12 @@
+h1 {
+    padding-top: 6.5%;
+    text-align: center;
+    font: normal normal 600 36px/43px Montserrat;
+    letter-spacing: 0px;
+    color: #212121;
+    opacity: 1;
+}
+
 h2 {
     text-align: left;
     font: normal normal 600 36px/43px Montserrat;
@@ -11,6 +20,44 @@ h3 {
     margin-top: 0px;
     font-size: 20px;
     padding-top: 19px;
+}
+
+h4 {
+    text-align: center;
+    font: normal normal normal 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+}
+
+h5 {
+    color: white;
+    margin-bottom: 11px;
+}
+
+.huge-size {
+    font-size: 96px;
+    color: white;
+}
+
+.dollar {
+    font-size: 40px;
+    color: white;
+}
+
+.plain-white {
+    text-align: left;
+    font: normal normal normal 14px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.plain-grey {
+    font: normal normal normal 14px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #86878B;
+    opacity: 1;
 }
 
 #navigation {
@@ -178,7 +225,8 @@ label {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 3px #00000061;
     opacity: 1;
-    margin-top: 0px;
+    
+    
 }
 
 .social-logos {
@@ -189,7 +237,7 @@ label {
 }
 
 .social-text {
-    margin-left: 152px;
+    padding-left: 10.8%;
     max-width: 392px;
 }
 
@@ -202,8 +250,246 @@ label {
 }
 
 .transitioning-section {
-    background-image: url(ass);
+    background: url(Assets/mountains.png);
+    display: flex;
+    justify-content: space-between;
+    height: 595px;
+    width: 100%;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    
+    
 }
+
+.squares {
+    margin-top: 127px;
+    margin-left: 10.8%;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.square {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #A37169;
+    color: white;
+    box-shadow: 0px 3px 6px #00000029;
+    align-items: center;
+    justify-content: center;
+}
+
+.square p {
+    transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+}
+
+.transitioning-text {
+    max-width: 512px;
+    margin-top: 157px;
+    margin-left: 57px;
+}
+
+.transitioning-images {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-top: 140px;
+}
+
+.square-flex {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.square-img {
+    max-height: 167px;
+    width: 35%;
+    
+}
+
+.square-img img {
+    width: 100%;
+}
+
+.rectangle-img {
+    width: 70%;
+    max-height: 177px;
+}
+
+.black-div {
+    background: #1C1C1C 0% 0% no-repeat padding-box;
+    display: flex;
+     
+}
+
+.logo-black {
+    display: flex;
+    flex-basis: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-black img {
+    width: 40%;
+}
+
+.text-inblack {
+    flex-basis: 30%;
+    margin-top: 90px;
+    margin-right: 14.5%;
+    margin-bottom: 7.1%;
+}
+
+
+
+.purple-icon1 {
+    font-size: 25px;
+    color: white;
+    background-color: #E27866;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-basis: 18%;
+}
+
+.purple-icon2 {
+    font-size: 25px;
+    color: white;
+    background-color: #E27866;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-basis: 30%;
+    
+}
+
+.title1 {
+    display: flex;
+    align-items: center;
+}
+
+.title1 {
+    display: flex;
+    align-items: center;
+}
+
+.awesome-div {
+    width: 100%;
+    text-align: center;
+}
+
+.awesome-div img {
+    width: 5%;
+    margin-bottom: 27px;
+    
+}
+
+.other-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 97px;
+}
+
+.other-icon {
+    flex-basis: 25%;
+}
+
+.pricing-div {
+    text-align: center;
+    background-color: #6696E2;
+    width: 100%;
+}
+
+.pricing-div img {
+    width: 5%;
+    margin-bottom: 27px;
+    
+}
+
+.pricing-div p {
+    text-align: center;
+}
+
+.pricing-plans {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 40px;
+    padding-bottom: 8%;
+    padding-top: 6%;
+    align-items: flex-end;
+}
+
+.plan-box {
+    width: 30%;
+}
+
+.black {
+    background-color: #1C1C1C;
+}
+
+.green {
+    height: 6px;
+    background-color: #41D395;
+}
+
+.black p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.black h3 {
+    color: white;
+}
+
+.white {
+    background-color: white;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin: auto;
+    padding-left: 0;
+    
+}
+
+li {
+    text-align: center;
+    font: normal normal normal 14px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #86878B;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.green-content {
+    height: auto;
+}
+
+.green-content p {
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+
+
+
+
 
 
 
