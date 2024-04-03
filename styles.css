@@ -1,3 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 60px;
+}
+
 h1 {
     padding-top: 6.5%;
     text-align: center;
@@ -61,6 +70,10 @@ h5 {
 }
 
 #navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     width: 100%;
     height: 72px;
     margin: auto;
@@ -634,12 +647,13 @@ li {
   }
 
   .send-button {
-    max-width: 158px;
+    width: 158px;
     color: white;
     background-color: #41D395;
     margin: auto;
     margin-bottom: 6%; 
     font-size: 15px;
+    border: unset;
 
 }  
 
