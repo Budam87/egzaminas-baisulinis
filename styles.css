@@ -190,6 +190,7 @@ span {
     color: white;
     padding: 17px 0px;
     margin-top: 42px;
+    border: none;
 }
 
 .input-box {
@@ -643,7 +644,7 @@ li {
 }  
 
 .send-button p {
-    padding: 15px 56px;
+    background-color: #41D395;
 }
 
 .footer {

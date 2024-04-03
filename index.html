@@ -14,11 +14,11 @@
                 <img src="Assets/navlogo.png" alt="nav-logo">
             </div>
             <div id="nav-menu">
-                <a href="#"><div class="nav-link">Features</div></a>
-                <a href="#"><div class="nav-link">About</div></a>
-                <a href="#"><div class="nav-link">Pricing</div></a>
-                <a href="#"><div class="nav-link">Reviews</div></a>
-                <a href="#"><div class="nav-link">Contact</div></a>
+                <a href="#features"><div class="nav-link">Features</div></a>
+                <a href="#about"><div class="nav-link">About</div></a>
+                <a href="#pricing"><div class="nav-link">Pricing</div></a>
+                <a href="#reviews"><div class="nav-link">Reviews</div></a>
+                <a href="#contact"><div class="nav-link">Contact</div></a>
             </div>
     
         </nav>
@@ -31,20 +31,20 @@
                 <button>DOWNLOAD</button>
             </div>
             <div class="city-form">
-                <form action="" class="sub-form">
+                <form action="" class="sub-form" id="sub">
                     <div class="trial">Try Your <span>FREE</span> Trial Today</div>
                     <div class="input-box">
                             <h4>Your details</h4>
                             <input type="text" id="fname" name="fname" placeholder="First name"> <br>
                             <input type="text" id="lname" name="lname" placeholder="Last name"> <br>
-                            <input type="number" id="lname" name="lname" placeholder="Phone number"> <br>
+                            <input type="number" id="phone" name="phone" placeholder="Phone number"> <br>
                             <h4>Type of subscription</h4>
                             <input type="radio" id="monthly" name="sub-type" value="monthly"> 
                             <label for="monthly">MONTHLY</label>
                             <input type="radio" id="yearly" name="sub-type" value="yearly">
                             <label for="yearly">YEARLY</label>
                         </div>     
-                            <div class="sub-button">GET STARTED</div>   
+                            <button type="submit" class="sub-button" >GET STARTED</button>   
                 </form>
             </div>
         </section>
@@ -60,7 +60,7 @@
                 <img src="Assets/twitter.svg" alt="twitter">
             </div>
         </section>
-        <section class="transitioning-section">
+        <section class="transitioning-section" id="features">
             <div class="squares">
                 <div class="square"><p>REGISTER</p></div>
                 <div class="square"><p>APPLY</p></div>
@@ -87,7 +87,7 @@
             </div>    
             </div>
         </section>
-        <section class="black-div">
+        <section class="black-div" id="about">
             <div class="logo-black">
                 <img src="Assets/logo2x.png" alt="logo">
             </div>
@@ -138,7 +138,7 @@
                 </div>
             </div>
         </section>
-        <section class="pricing-div">
+        <section class="pricing-div" id="pricing">
             <h2>PRICING OPTIONS</h2>
             <img src="Assets/blue divider.svg" alt="divider">
             <p class="plain-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -205,7 +205,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews-div">
+        <section class="reviews-div" id="reviews">
             <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
             <img src="Assets/blue divider.svg" alt="divider">
             <div class="responses">
@@ -247,21 +247,21 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>CONTACT US</h2>
             <p class="plain-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="contact-form">
-                <form action="">
+                <form action="" id="sub2">
                     <div class="contact-info">
-                        <input type="text" id="fname" name="fname" placeholder="First name"> <br>
-                        <input type="text" id="lname" name="lname" placeholder="Last name"> <br>
-                        <input type="number" id="lname" name="lname" placeholder="Phone number"> <br>
+                        <input type="text" id="fname2" name="fname" placeholder="First name"> <br>
+                        <input type="text" id="lname2" name="lname" placeholder="Last name"> <br>
+                        <input type="number" id="phone2" name="phone" placeholder="Phone number"> <br>
                         <input type="radio" id="personal" name="contact-info" value="personal"> 
                         <label for="monthly" class="contact-label">PERSONAL</label>
                         <input type="radio" id="company" name="contact-info" value="company">
                         <label for="yearly" class="contact-label">COMPANY</label>
                     </div>  
-                    <div class="send-button"><p>SEND</p></div>    
+                    <button type="submit" class="send-button"><p>SEND</p></button>    
                 </form>
             </div>
         </section>
