@@ -1,11 +1,13 @@
 html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 body {
     padding-top: 60px;
 }
+
 
 h1 {
     padding-top: 6.5%;
@@ -126,7 +128,7 @@ a:hover {
 .city-view {
     display: flex;
     justify-content: space-between;
-    height: 639px;
+    height: 100vh;
     background-image: url(Assets/city.png);
     background-repeat:no-repeat;
     -webkit-background-size:cover;
@@ -164,10 +166,10 @@ a:hover {
 
 .city-form {
     display: flex;
-    margin-right: 148px;
-    margin-top: 65px;
-    margin-left: 91px;
-    width: 20%;
+    margin-right: 10.8%;
+    margin-top: 4%;
+    margin-left: 5%;
+    width: 25%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 20px #00000029;
     opacity: 1;
@@ -339,6 +341,10 @@ label {
     
 }
 
+.square:hover {
+    background-color: #E27866;
+}
+
 .square-img {
     max-height: 167px;
     width: 35%;
@@ -442,6 +448,20 @@ label {
 
 .other-icon {
     flex-basis: 25%;
+    
+}
+
+.other-icon i {
+    color: #E27866;
+    margin-top: 5%;
+}
+
+.other-icon h4 {
+    padding-top: 8%;
+}
+
+.other-icon p {
+    padding-bottom: 8%;
 }
 
 .other-icons h4 {
@@ -479,6 +499,7 @@ label {
     padding-bottom: 8%;
     padding-top: 6%;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .pricing-plans h4 {
@@ -486,7 +507,7 @@ label {
 }
 
 .plan-box {
-    width: 30%;
+    width: 25%;
 }
 
 .black {
@@ -680,6 +701,166 @@ li {
 .footer-logos img {
     width: 20px;
     height: 20px;
+}
+
+/* ---------------mobile-------- */
+
+@media only screen and (max-width: 700px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        padding-top: 60px;
+    }
+    .city-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .city-left {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .city-form {
+        display: none;
+    }
+
+    .social-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .social-logos {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        gap: 30px;
+        margin-right: 0;
+    }
+
+    .squares {
+        flex-direction: row;
+        margin: auto;
+        margin-top: 4%;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .square {
+        width: 70px;
+        height: 70px;
+    }
+
+    .transitioning-text h2 {
+        margin-top: 0;
+    }
+
+    .transitioning-section {
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+
+    .transitioning-text {
+        width: 80%;
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .transitioning-text p:last-child {
+        margin-bottom: 0;
+    }
+
+    .transitioning-images {
+        margin: auto;
+        margin-top: 0;
+        margin-bottom: 5%;
+        width: 60%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .square-flex {
+        justify-content:space-between;
+    }
+
+    .rectangle-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .black-div {
+        flex-direction: column;
+    }
+
+    .logo-black {
+        margin-top: 5%;
+    }
+
+    .text-inblack {
+        margin: auto;
+        width: 80%;
+        padding-bottom: 5%;
+    }
+
+    .awesome-div {
+        width: 80%;
+        margin: auto;
+    }
+
+    .awesome-div h2 {
+        text-align: center;
+    }
+
+    .other-icons {
+        flex-direction: column;
+        gap: 25px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .pricing-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-box {
+        width: 70%;
+    }
+
+    .reviews-div {
+        width: 100%;
+    }
+    .responses {
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .customer-div {
+        width: 70%;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
 }
 
 
