@@ -330,6 +330,7 @@ label {
     max-width: 512px;
     margin-top: 157px;
     margin-left: 57px;
+    padding-bottom: 15%;
 }
 
 .transitioning-images {
@@ -349,6 +350,9 @@ label {
     background-color: #E27866;
 }
 
+.invisible {
+    display: none;
+}
 .square-img {
     max-height: 167px;
     width: 35%;
@@ -798,10 +802,15 @@ li {
         width: 60%;
         flex-direction: row;
         justify-content: space-between;
+        display: none;
     }
 
     .square-flex {
         justify-content:space-between;
+    }
+
+    .invisible {
+        display: block;
     }
 
     .rectangle-img {

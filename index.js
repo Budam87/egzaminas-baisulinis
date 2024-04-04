@@ -56,26 +56,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const squares = document.querySelectorAll('.square');
 const h2Element = document.querySelector('.transitioning-text h2');
-const paragraphs = document.querySelectorAll('.transitioning-text p');
+
 
 function handleSquareClick(event) {
+
     const index = Array.from(squares).indexOf(event.target);
-    const h2Content = [
-        "REGISTER",
-        "APPLY",
-        "RECEIVE"
-    ];
 
-    const pContents = [
-        ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."],
-        ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet."],
-        ["Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.", "Proin gravida dolor sit amet lacus accumsan et viverra."]
-    ];
-
-    h2Element.textContent = h2Content[index];
-    paragraphs.forEach((paragraph, i) => {
-        paragraph.textContent = pContents[index][i];
-    });
+    if (index === 0) {
+        h2Element.textContent = "REGISTER";
+    } else if (index === 1) {
+        h2Element.textContent = "APPLY";
+    } else if (index === 2) {
+        h2Element.textContent = "RECEIVE";
+    }
 }
 
 squares.forEach(square => {
