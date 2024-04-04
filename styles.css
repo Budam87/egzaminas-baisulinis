@@ -330,7 +330,11 @@ label {
     max-width: 512px;
     margin-top: 157px;
     margin-left: 57px;
-    padding-bottom: 15%;
+    
+}
+
+.transitioning-text p:last-child {
+    display: none;
 }
 
 .transitioning-images {
@@ -338,6 +342,11 @@ label {
     flex-direction: column;
     gap: 26px;
     margin-top: 140px;
+}
+
+.transitioning-images img:hover {
+    cursor: pointer;
+    filter: opacity(50%);
 }
 
 .square-flex {
@@ -348,11 +357,10 @@ label {
 
 .square:hover {
     background-color: #E27866;
+    cursor: pointer;
 }
 
-.invisible {
-    display: none;
-}
+
 .square-img {
     max-height: 167px;
     width: 35%;
@@ -737,6 +745,11 @@ li {
         justify-content: center;
         align-items: center;
         padding-top: 0;
+        
+    }
+
+    .city-left h2 {
+        text-align: center;
     }
 
     .city-form {
@@ -749,6 +762,15 @@ li {
         justify-content: center;
         align-items: center;
         
+    }
+
+    .social-text {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .social-text p {
+        text-align: center;
     }
 
     .social-logos {
@@ -776,12 +798,17 @@ li {
 
     .transitioning-text h2 {
         margin-top: 0;
+        text-align: center;
+    }
+
+    .transitioning-text  p {
+        text-align: center;
     }
 
     .transitioning-section {
         flex-direction: column;
         gap: 20px;
-        
+        text-align: center;
     }
 
     .transitioning-text {
@@ -799,11 +826,14 @@ li {
         margin: auto;
         margin-top: 0;
         margin-bottom: 5%;
-        width: 60%;
+        width: 80%;
         flex-direction: row;
         justify-content: space-between;
-        display: none;
+        
     }
+
+
+    
 
     .square-flex {
         justify-content:space-between;
@@ -830,6 +860,11 @@ li {
         margin: auto;
         width: 80%;
         padding-bottom: 5%;
+        
+    }
+
+    .text-inblack h2  {
+        text-align: center;
     }
 
     .awesome-div {
