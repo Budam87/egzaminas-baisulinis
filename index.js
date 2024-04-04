@@ -32,5 +32,39 @@ document.getElementById("sub2").addEventListener("submit", function(event) {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    var navLinks = document.querySelectorAll('#nav-menu a');
+    navLinks.forEach(function(navLink) {
+        navLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            
+            var targetId = this.getAttribute('href').substring(1);
+            
+            var targetSection = document.getElementById(targetId);
+            
+            var setTop = targetSection.offsetTop;
+            
+            window.scrollTo({
+                top: setTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
+function tabFunctionality() {
+
+    let squares = document.querySelectorAll('.square');
+
+    let transitionTextP = document.querySelectorAll('.transitioning-text p');
+
+    let pTexts = [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.'
+    ];
+
+}
+
 
 
