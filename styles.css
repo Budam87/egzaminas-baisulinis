@@ -86,6 +86,10 @@ h5 {
     justify-content: space-between;
 }
 
+#navigation i {
+    display: none;
+}
+
 .nav-logo {
     padding-left: 10.8%;
     padding-top: 10px;
@@ -860,6 +864,49 @@ li {
 
     .contact-form {
         width: 80%;
+    }
+
+    #navigation {
+        
+    }
+
+    #nav-menu {
+        display: none;
+        background-color: black;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background-color: #1C1C1C;
+        width: 100px;
+        
+    }
+
+    #nav-menu div {
+        margin: auto;
+        display: block;
+    }
+
+    #nav-menu.active {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        gap: 20px;
+        padding: 0;
+        min-height: 240px;
+        padding-bottom: 2%;
+    }
+
+    #navigation i {
+        display: block;
+        color: #E27866;
+        margin-right: 10.8%;
+    }
+
+    .nav-link {
+        justify-content: center;
+        align-items: center;
+        display: block;
     }
 }
 
