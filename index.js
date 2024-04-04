@@ -52,19 +52,39 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function tabFunctionality() {
 
-    let squares = document.querySelectorAll('.square');
 
-    let transitionTextP = document.querySelectorAll('.transitioning-text p');
+const squares = document.querySelectorAll('.square');
+const h2Element = document.querySelector('.transitioning-text h2');
+const paragraphs = document.querySelectorAll('.transitioning-text p');
 
-    let pTexts = [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.'
+function handleSquareClick(event) {
+    const index = Array.from(squares).indexOf(event.target);
+    const h2Content = [
+        "REGISTER",
+        "APPLY",
+        "RECEIVE"
     ];
 
+    const pContents = [
+        ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."],
+        ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet."],
+        ["Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.", "Proin gravida dolor sit amet lacus accumsan et viverra."]
+    ];
+
+    h2Element.textContent = h2Content[index];
+    paragraphs.forEach((paragraph, i) => {
+        paragraph.textContent = pContents[index][i];
+    });
 }
+
+squares.forEach(square => {
+    square.addEventListener('click', handleSquareClick);
+});
+
+
+
+
 
 
 
