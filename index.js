@@ -56,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const squares = document.querySelectorAll('.square');
 const h2Element = document.querySelector('.transitioning-text h2');
+const paragraphs = document.querySelectorAll('.tab-para');
+console.log(paragraphs)
+console.log(paragraphs[0])
 
 
 function handleSquareClick(event) {
@@ -64,10 +67,16 @@ function handleSquareClick(event) {
 
     if (index === 0) {
         h2Element.textContent = "REGISTER";
+        paragraphs[0].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.";
+        paragraphs[1].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum."
     } else if (index === 1) {
         h2Element.textContent = "APPLY";
+        paragraphs[0].textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex."
+        paragraphs[1].textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita."
     } else if (index === 2) {
         h2Element.textContent = "RECEIVE";
+        paragraphs[0].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."
+        paragraphs[1].textContent = "Proin gravida dolor sit amet lacus accumsan et viverra."
     }
 }
 
