@@ -38,11 +38,11 @@ document.addEventListener("DOMContentLoaded", function() {
         navLink.addEventListener('click', function(event) {
             event.preventDefault();
             
-            var targetId = this.getAttribute('href').substring(1);
+            let targetId = this.getAttribute('href').substring(1);
             
-            var targetSection = document.getElementById(targetId);
+            let targetSection = document.getElementById(targetId);
             
-            var setTop = targetSection.offsetTop;
+            let setTop = targetSection.offsetTop;
             
             window.scrollTo({
                 top: setTop,
@@ -62,22 +62,35 @@ console.log(paragraphs[0])
 
 
 function handleSquareClick(event) {
-
     const index = Array.from(squares).indexOf(event.target);
+    const transitioningImages = document.querySelector('.transitioning-images');
 
     if (index === 0) {
         h2Element.textContent = "REGISTER";
         paragraphs[0].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.";
-        paragraphs[1].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum."
+        paragraphs[1].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.";
     } else if (index === 1) {
         h2Element.textContent = "APPLY";
-        paragraphs[0].textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex."
-        paragraphs[1].textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita."
+        paragraphs[0].textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.";
+        paragraphs[1].textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.";
     } else if (index === 2) {
         h2Element.textContent = "RECEIVE";
-        paragraphs[0].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo."
-        paragraphs[1].textContent = "Proin gravida dolor sit amet lacus accumsan et viverra."
+        paragraphs[0].textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.";
+        paragraphs[1].textContent = "Proin gravida dolor sit amet lacus accumsan et viverra.";
+    } else if (index === 3) {
+        h2Element.textContent = "PHOTOS";
+        paragraphs.forEach(paragraph => {
+            paragraph.style.display = 'none';
+        });
+        transitioningImages.style.display = 'flex'; 
+        return; 
     }
+
+    
+    paragraphs.forEach(paragraph => {
+        paragraph.style.display = 'block';
+    });
+    /* transitioningImages.style.display = 'none'; */
 }
 
 squares.forEach(square => {

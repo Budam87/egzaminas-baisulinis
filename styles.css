@@ -310,6 +310,8 @@ label {
     justify-content: center;
 }
 
+
+
 .squares {
     margin-top: 127px;
     display: flex;
@@ -331,6 +333,9 @@ label {
     justify-content: center;
 }
 
+.hidden {
+    display: none;
+}
 .square p {
     transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
 }
@@ -731,7 +736,7 @@ li {
 
 /* ---------------mobile-------- */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 
     html, body {
         margin: 0;
@@ -802,17 +807,23 @@ li {
     }
 
     .square {
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
     }
 
     .transitioning-text h2 {
         margin-top: 0;
         text-align: center;
+        margin-bottom: 0;
     }
 
     .transitioning-text  p {
         text-align: center;
+        
+    }
+
+    #features {
+        display: flex;
     }
 
     .transitioning-section {
@@ -833,17 +844,20 @@ li {
     }
 
     .transitioning-images {
-        margin: auto;
+        margin: 0;
         margin-top: 0;
         margin-bottom: 5%;
-        width: 80%;
+        width: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        display: flex;
         
     }
 
-
-    
+    .square-img {
+        max-width: 120px;
+        max-height: 120px;
+    }
 
     .square-flex {
         justify-content:space-between;
@@ -853,9 +867,13 @@ li {
         display: block;
     }
 
+    .hidden {
+        display: flex;
+    }
+
     .rectangle-img {
-        width: 100%;
-        height: auto;
+        width: 260px;
+        max-height: 120px;
     }
 
     .black-div {
@@ -896,6 +914,7 @@ li {
     .pricing-plans {
         flex-direction: column;
         align-items: center;
+        width: 70%;
     }
 
     .plan-box {
@@ -960,6 +979,10 @@ li {
         display: block;
     }
 }
+
+
+
+
 
 
 
